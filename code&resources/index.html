@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nokka 3</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body >
+
+    <section id = "Header">
+        <nav>
+            <a href="index.html" id="lg"><img src="lghome.png" alt=""></a>
+            <div class = "Menu">
+                <ul>
+                    <li><a href="News.html">News</a></li>
+                    <li><a href="Esport.html">Esport</a></li>
+                    <li><a href="heroes.html">Heroes</a></li>
+                    <li><a href="Register.html">Daftar/Masuk</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section class="head">
+
+        
+
+        <div id = "Unleash">
+            UNLEASH YOUR INNER 
+        </div>
+        
+        <div id = "Beast">
+            BEAST
+        </div>
+        
+        <div id = "anii">
+            TO ANNIHILATE YOUR 
+        </div>
+        
+        <div id = "Enemy">
+            ENEMY
+        </div>
+        <br>
+        <div class="button">
+            <a href="Register.html" class="button-bg">Register For Free</a>
+        </div>
+        
+
+    </section>
+
+    <section class="carousel">
+        <div class="geseran">
+            <div class="geser active">
+            <img src="news1.png" alt="">
+            </div>
+            <div class="geser">
+            <img src="news2.png" alt="">
+            </div>
+            <div class="geser">
+            <img src="news3.png" alt="">
+            </div>
+            <div class="geser">
+            <img src="news4.png" alt="">
+            </div>
+            <div class="navi">
+            <div class="tombol active"></div>
+            <div class="tombol"></div>
+            <div class="tombol"></div>
+            <div class="tombol"></div>
+            </div>
+        </div>
+    
+        <script type="text/javascript">
+        var gsr = document.querySelectorAll('.geser');
+        var tmbl = document.querySelectorAll('.tombol');
+        let currentgeser = 1;
+    
+        
+        var manualNav = function(manual){
+            gsr.forEach((geser) => {
+            geser.classList.remove('active');
+    
+            tmbl.forEach((tombol) => {
+                tombol.classList.remove('active');
+            });
+            });
+    
+            gsr[manual].classList.add('active');
+            tmbl[manual].classList.add('active');
+        }
+    
+        tmbl.forEach((tombol, i) => {
+            tombol.addEventListener("click", () => {
+            manualNav(i);
+            currentgeser = i;
+            });
+        });
+    
+        
+        var auto = function(activeClass){
+            let active = document.getElementsByClassName('active');
+            let i = 1;
+    
+            var automatic = () => {
+            setTimeout(function(){
+                [...active].forEach((activegeser) => {
+                activegeser.classList.remove('active');
+                });
+    
+            gsr[i].classList.add('active');
+            tmbl[i].classList.add('active');
+            i++;
+    
+            if(gsr.length == i){
+                i = 0;
+            }
+            if(i >= gsr.length){
+                return;
+            }
+            automatic();
+            }, 3000);
+            }
+            automatic();
+        }
+        auto();
+        </script>
+    </section>
+
+
+
+
+
+
+    <section class="badi">
+
+
+
+        <div class="latest">
+            <div class="joedoel">
+                <h1>OUR LATEST HISTORY</h1>
+                <p>YOU SHALL BE IMMORTAL TO READ THIS GODS'S WILL</p>
+            </div>
+            <div class="ltgbr">
+                <div class="gbrLatest">
+                    <img src="latest 1.jpg" alt="">
+                    <div class="lay">
+                        <h3>NUX SUPPORT's new ability</h3>
+                        <p>Nux will come with new whole ability <br> NEXT PATCH</p>
+                    </div>
+                </div>
+                <div class="gbrLatest">
+                    <img src="latest 2.jpg" alt="">
+                    <div class="lay">
+                        <h3>AMBER SPIRITZ</h3>
+                        <p>New gamemode coming soon <br> its AMBER SPIRITZ </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ltgbr">
+                <div class="gbrLatest">
+                    <img src="latest 3.png" alt="">
+                    <div class="lay">
+                        <h3>UPCOMING ENIGBU'S BUFF</h3>
+                        <p>Eilodon damage will be increase<br>what do you think?</p>
+                    </div>
+                </div>
+                <div class="gbrLatest">
+                    <img src="latest 4.png" alt="">
+                    <div class="lay">
+                        <h3>ELECTRIC HORSE</h3>
+                        <p>New pet coming soon <br> its zap spirit's pet. HORSERM </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+        
+
+    <section class="esport">
+        <div class="subes">
+            
+            <img src="champ1.jpg" alt="" class="champ1">
+            <img src="champ2.jpg" alt="" class="champ2">
+            <img src="champ3.jpg" alt="" class="champ3">
+            <h1>NOKA 3</h1>
+            <p id="epc">ESPORT PRO CIRCUIT</p>
+            <a href="Esport.html" class="dyp">DO YOU HAVE ANY COURAGE TO WITHNESS BATTLES BEETWEN GODS</a>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>ALL RIGHT RESERVE</p>
+        
+    
+    </section>
+
+
+
+</body>
+
+</html>

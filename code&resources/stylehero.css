@@ -1,0 +1,309 @@
+body{
+    margin: 0;
+    padding:0;
+    height: 100%;
+    
+}
+
+nav{
+    display: flex;
+    justify-content : space-evenly;
+    align-items: center;
+}
+
+
+#Header{
+    position :sticky;
+    width : 100%;
+    height : 54px;
+    background:black;
+}
+
+.Menu{
+    flex : 1;
+    text-align: center;
+}
+
+
+.Menu ul li{
+    list-style: None;
+    display : inline-block;
+    padding : 0px 100px;
+}
+
+.Menu ul li a{
+    text-decoration: none;
+    color: gray;
+    transition: 0.1s;
+}
+
+.Menu ul li a:hover{
+    color: aliceblue;
+}
+nav img{
+    width: 120%;
+    height: 120%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+@media (max-width:800px) {
+    .Menu ul li{
+        padding: 0px 50px;
+    }
+    .Menu ul li a{
+        font-size: 15px;
+    }
+}
+
+
+.badi{
+    height: 100%;
+    width: 100%;
+    /* background-image: url(tes2.jpg); */
+    background: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 0;
+    
+}
+
+.head{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.head h1{
+    font-family: 'Cinzel';
+    font-style: normal;
+    
+    font-size: 60px;
+    color: #A22020;
+
+}
+
+.head p{
+    font-family: 'Cormorant SC';
+    font-style: normal;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.head p::after{
+    content: '';
+    width: 60%;
+    
+    height: 2px;
+    background: #9f1d1d;
+    display: block;
+    margin: auto;
+}
+
+.titl{
+    align-items: left;
+    margin-left: 150px;
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+
+.titl img{
+    width: 10%;
+}
+
+.titl h1{
+    font-family: 'Cormorant SC';
+    color: #A22020;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 50px;
+    font-size: 50px;
+    
+}
+
+.titl1{
+    align-items: left;
+    margin-left: 150px;
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+
+.titl1 img{
+    width: 10%;
+}
+
+.titl1 h1{
+    font-family: 'Cormorant SC';
+    color: #188C16;;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 50px;
+    font-size: 50px;
+    
+    
+}
+
+
+
+.titl2{
+    align-items: left;
+    margin-left: 150px;
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+
+.titl2 img{
+    width: 10%;
+}
+
+.titl2 h1{
+    font-family: 'Cormorant SC';
+    color: #1685B5;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 50px;
+    font-size: 50px;
+    
+    
+}
+
+@media (max-width:800px) {
+    .titl{
+        margin-left: 60px;
+    }
+    .titl h1{
+        font-size: 30px;
+        padding-left: 20px;
+        padding-top: 0px;
+    }
+    .titl1{
+        margin-left: 60px;
+    }
+    .titl1 h1{
+        font-size: 30px;
+        padding-left: 20px;
+        padding-top: 0px;
+    }
+    .titl2{
+        margin-left: 60px;
+    }
+    .titl2 h1{
+        font-size: 30px;
+        padding-left: 20px;
+        padding-top: 0px;
+    }
+}
+
+.latest{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    
+    color: white;
+    
+}
+
+.ltgbr{
+    
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.gbrLatest{
+    
+    flex-basis: 20%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gbrLatest img{
+    width: 100%;
+   
+}
+
+.lay{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top:0;
+    left: 0;
+    transition: 0.7s;
+}
+
+.lay:hover {
+    background:rgba(0, 0, 0, 0.3);;
+}
+
+
+.lay p{
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    font-family : 'Kotta One';
+    font-style : 'normal';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.7s;
+    
+}
+
+
+
+.lay img{
+    width: 50px;
+    bottom: 20%;
+    left: 10%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.7s;
+
+}
+
+.lay:hover img{
+    bottom: 10%;
+    opacity: 1;
+}
+
+.lay:hover p{
+    bottom: 1%;
+    opacity: 1;
+}
+
+@media (max-width:800px) {
+    .lay img{
+        width: 20px;
+        bottom: 5%;
+    }
+    .lay p{
+        font-size: 10px;
+        bottom: 10%;
+    }
+}
+
+
+.footer{
+    
+    height: 20vh;
+    background-color: black;
+    position: relative;
+    align-items: center;
+    margin-top: 0;
+    
+
+}
+.footer p{
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+
+}

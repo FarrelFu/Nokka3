@@ -1,0 +1,415 @@
+
+
+.Background{
+    position: absolute;
+    width : 100%;
+    height : 100%;
+
+    background: black;
+    background-position : center;
+    background-size :100%;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    height: 100%;
+    
+}
+
+#Header{
+    position :sticky;
+    width : 100%;
+    height : 54px;
+    background:black;
+}
+
+nav{
+    display: flex;
+    justify-content : space-evenly;
+    align-items: center;
+}
+
+.head{
+    min-height: 80vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(191, 6, 6, 0.1),rgba(0, 0, 0, 1)),url(tb.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+   
+}
+
+.head:hover{
+    background-image:linear-gradient(rgba(255, 0, 0, 0.15),rgba(0, 0, 0, 1)),url(tb.jpg);
+}
+
+.Menu{
+    flex : 1;
+    text-align: center;
+}
+
+.Menu ul li{
+    list-style: None;
+    display : inline-block;
+    padding : 0px 100px;
+}
+
+.Menu ul li a{
+    text-decoration: none;
+    color: gray;
+    transition: 0.1s;
+    
+}
+
+.Menu ul li a:hover{
+    color: aliceblue;
+}
+
+nav img{
+    width: 120%;
+    height: 120%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+@media (max-width:800px) {
+    .Menu ul li{
+        padding: 0px 50px;
+    }
+    .Menu ul li a{
+        font-size: 15px;
+    }
+}
+.content{
+    position : relative;
+    margin : auto;
+    min-width : 900px;
+    max-width : 1200px;
+    min-height : 800px;
+    max-height : 900px;
+    border-radius : 10px;
+}
+
+.Noka{
+    position :relative;
+    left : 4%;
+
+    font-style : normal;
+    font-weight : 700;
+    font-size : 45px;
+    text-align :left;
+
+    color : red;
+}
+
+.box{
+    position : relative;
+    margin : auto;
+    min-width : 800px;
+    max-width : 1200px;
+    min-height : 700px;
+    max-height : 800px;
+
+    background : rgba(255,255,255,0.13);
+    border : 1px solid white;
+    border-radius : 6px;
+
+}
+
+#RegisTxt{
+    position : absolute;
+    text-align : left;
+    display : flex;
+
+    font-size: 30px;
+    font-weight : 400px;
+
+    left : 1vw;
+
+    color : white;
+
+    border-bottom : 1px solid white;
+}
+
+#TextForm{
+    position : relative;
+    width : 450px;
+    height : 10px;
+    left : 5%;
+
+    font-family : 'Font Awesome Brands';
+    font-style : normal;
+    font-weight : 400;
+    font-size : 20px;
+    line-height : 35px;
+
+    color: white;
+}
+
+#NameTxt{
+    position : absolute;
+    margin : auto;
+    left : 60%;
+    width : 750px;
+    height : 20px;
+}
+
+#EmailTxt{
+    position : absolute;
+    margin : auto;
+    left : 60%;
+    width : 750px;
+    height : 20px;
+}
+
+#PasswordTxt{
+    position : absolute;
+    margin : auto;
+    left : 60%;
+    width : 750px;
+    height : 20px;
+}
+
+#ConfirmPassTxt{
+    position : absolute;
+    margin : auto;
+    left : 60%;
+    width : 750px;
+    height : 20px;
+}
+
+#CB{
+    position : relative;
+    width : 30px;
+    height : 20px;
+}
+
+#TNC{
+    position : absolute;
+    left : 9%;
+    /* bottom: 20%; */
+    width : 400px;
+    height : 20px;
+
+    font-size : 25px;
+    color : white;
+}
+
+.submit{
+    position : absolute;
+    left : 88%;
+    top : 93%;
+    width : 110px;
+    height : 34px;
+
+    color : black;
+    font-size : 25px;
+    text-align : center;
+}
+
+#Error{
+    color : red;
+    position : absolute;
+    font-size : 20px;
+    top : 65%;
+    left : 5%;
+}
+
+#footer{
+    position : relative;
+    font-size : 20px;
+    bottom : 0px;
+    left : 49%;
+
+    color : white;
+}
+.footer{
+    
+    height: 20vh;
+    background-color: black;
+    position: relative;
+    align-items: center;
+
+}
+.footer p{
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    margin-top: 0;
+}
+
+
+
+@media (max-width : 800px) {
+   
+    
+    nav{
+        display: flex;
+        justify-content : space-evenly;
+        align-items: center;
+    }
+    
+    .Head{
+        flex : 1;
+        text-align: center;
+        font-size : 15px;
+    }
+    
+    .Head ul li{
+        list-style: None;
+        display : inline-block;
+        padding : 0px 50px;
+        position : relative;
+    }
+    
+    .Head ul li a{
+        color : white;
+        text-decoration: none;
+    }
+    
+    .content{
+        position : relative;
+        margin : auto;
+        min-width : 450px;
+        max-width : 650px;
+        min-height : 400px;
+        max-height : 450px;
+        border-radius : 10px;
+    }
+    
+    .Noka{
+        position :relative;
+        left : 4%;
+    
+        font-family : 'Cinzel';
+        font-style : normal;
+        font-weight : 700;
+        font-size : 25px;
+        text-align :left;
+    
+        color : red;
+    }
+    
+    .box{
+        position : relative;
+        margin : auto;
+        min-width : 650px;
+        max-width : 900px;
+        min-height : 700px;
+        max-height : 800px;
+    
+        background : rgba(255,255,255,0.13);
+        border : 1px solid white;
+        border-radius : 6px;
+    
+    }
+    
+    #RegisTxt{
+        position : absolute;
+        text-align : left;
+        display : flex;
+    
+        font-size: 30px;
+        font-weight : 400px;
+    
+        left : 1vw;
+    
+        color : white;
+    
+        border-bottom : 1px solid white;
+    }
+    
+    #TextForm{
+        position : relative;
+        width : 450px;
+        height : 10px;
+        left : 5%;
+    
+        font-family : 'Font Awesome Brands';
+        font-style : normal;
+        font-weight : 400;
+        font-size : 20px;
+        line-height : 35px;
+    
+        color: white;
+    }
+    
+    #NameTxt{
+        position : absolute;
+        margin : auto;
+        left : 60%;
+        width : 330px;
+        height : 15px;
+    }
+    
+    #EmailTxt{
+        position : absolute;
+        margin : auto;
+        left : 60%;
+        width : 330px;
+        height : 15px;
+    }
+    
+    #PasswordTxt{
+        position : absolute;
+        margin : auto;
+        left : 60%;
+        width : 330px;
+        height : 15px;
+    }
+    
+    #ConfirmPassTxt{
+        position : absolute;
+        margin : auto;
+        left : 60%;
+        width : 330px;
+        height : 15px;
+    }
+    
+    #CB{
+        position : relative;
+        height : 20px;
+    }
+    
+    #TNC{
+        position : absolute;
+        left : 9%;
+        bottom: 15%;
+        width : 200px;
+        height : 10px;
+    
+        font-size : 15px;
+        color : white;
+    }
+    
+    .submit{
+        position : absolute;
+        left : 83%;
+        top : 93%;
+        width : 80px;
+        height : 28px;
+    
+        color : black;
+        font-size : 20px;
+        text-align : center;
+    }
+    
+    .SubmitText :hover{
+        color : red;
+    }
+    
+    #Error{
+        color : red;
+    }
+    
+    #footer{
+        position : absolute;
+        font-size : 13px;
+        bottom : 0px;
+        left : 49%;
+    
+        color : white;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="Register.css">
+    <script src="Register.js"></script>
+</head>
+<body class = "Background">
+
+    <section id = "Header">
+        <nav>
+            <a href="index.html" id="lg"><img src="lghome.png" alt=""></a>
+            <div class = "Menu">
+                <ul>
+                    <li><a href="News.html">News</a></li>
+                    <li><a href="Esport.html">Esport</a></li>
+                    <li><a href="heroes.html">Heroes</a></li>
+                    <li><a href="Register.html">Daftar/Masuk</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+<section class = "content">
+    <div>
+        <p class = "Noka">NOKA 3</p>
+    
+        <form class = "box" onsubmit = "return validasi()" onsubmit="return false">
+            <h2 id = "RegisTxt">REGISTRATION FORM</h2>
+    
+            <br><br><br><br><br>
+    
+            <p id = "TextForm">
+                NAME 
+                <input type="text" id ="NameTxt">
+            </p>
+            
+            <br><br><br>
+    
+            <p id = "TextForm">
+                E-MAIL
+                <input type="text" id ="EmailTxt">
+            </p>
+    
+            <br><br><br>
+    
+            <p id = "TextForm">
+                PASSWORD
+                <input type="password" id ="PasswordTxt">
+            </p>
+    
+            <br><br><br>
+    
+            <p id = "TextForm">
+                CONFIRM PASSWORD
+                <input type="password" id ="ConfirmPassTxt">
+            </p>
+    
+            <br>
+
+                
+            <p id = "TextForm">
+                Gender
+                <input type="radio" name ="Gender"id ="MaleRad">  Male
+                <input type="radio" name= "Gender" id="FemaleRad">  Female
+            </p>
+    
+            <br>
+    
+            <p id = "TextForm">
+                <input type="checkbox" name ="Checkbox"id ="CB"> I Agree With Terms & Conditions
+            </p>
+    
+    
+            <button type = "submit" class = "submit">Submit</button>
+    
+            <p id = "Error"></p>
+    
+        </form>
+    </div>
+</section>
+<section class="footer">
+    <p>ALL RIGHT RESERVE</p>
+    
+
+</section>
+
+
+
+</body>
+</html>

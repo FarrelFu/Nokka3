@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    padding:0;
+    height: 100%;
+    
+}
+
+nav{
+    display: flex;
+    justify-content : space-evenly;
+    align-items: center;
+}
+
+.Background{
+    position: absolute;
+    width : 100%;
+    height : 100%;
+
+    background: black;
+    background-position : center;
+    background-size :100%;
+}
+
+#Header{
+    position :sticky;
+    width : 100%;
+    height : 54px;
+    background:black;
+}
+
+.Menu{
+    flex : 1;
+    text-align: center;
+}
+
+
+.Menu ul li{
+    list-style: None;
+    display : inline-block;
+    padding : 0px 100px;
+}
+
+.Menu ul li a{
+    text-decoration: none;
+    color: gray;
+    transition: 0.1s;
+}
+
+.Menu ul li a:hover{
+    color: aliceblue;
+}
+nav img{
+    width: 120%;
+    height: 120%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+@media (max-width:800px) {
+    .Menu ul li{
+        padding: 0px 50px;
+    }
+    .Menu ul li a{
+        font-size: 15px;
+    }
+}
+
+.News{
+    font-size: 50px;
+    position : relative;
+    color : white;
+    left : 48%;
+    margin-bottom: 50px;
+}
+
+
+.kotak{
+    top: 10%;
+    left: 10%;
+    position : relative;
+    width: 80%;
+    height: 100%
+    
+    
+}
+
+.line {
+    position :relative;
+    border-bottom: 1px solid white;
+    top: 180px;
+    width : 100%;
+}
+
+.box{
+    position : relative;
+    background: black;
+    margin : auto;
+    transition: 0.5s;
+    min-width : 700px;
+    max-width : 1100px;
+    height : 200px;
+}
+
+.box:hover{
+    background: gray;
+}
+
+.Title{
+    position : absolute;
+    left : 23%;
+    padding-top: 10px;
+    font-family : 'Inter';
+    font-size : 30px;
+    
+    align-items : center;
+
+    color : white;
+}
+
+.Desc{
+    position : absolute;
+    left : 23%;
+    padding-top: 25px;
+    font-family : 'Inter';
+    font-size : 20px;
+    
+    align-items : center;
+
+    color : white;
+}
+
+.Image {
+    top:10px;
+    position : absolute;
+    left : 1%;
+
+    width : 205px;
+    height : 150px;
+
+}
+
+#footer{
+    position : relative;
+    font-size : 20px;
+    bottom : 0px;
+    left : 49%;
+
+    color : white;
+}
+
+.footer{
+    margin-top: 70px;
+    height: 10vh;
+    background-color: black;
+    position: relative;
+    align-items: center;
+
+}
+.footer p{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    margin-top: 0;
+}
+
+
+@media (max-width:800px) {
+    .Image{
+        padding-top: 20px;
+    width : 150px;
+    height : 100px;
+    }
+    .Title{
+        font-size: 20px;
+    }
+    .Desc{
+    font-size: 15PX;
+    }
+    .box{
+        padding-right: 10px;
+        margin-right: 30px;
+    }
+    .footer{
+        margin-top: 130px;
+    }
+
+}
